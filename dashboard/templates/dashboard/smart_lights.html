@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Lights Dashboard</title>
+</head>
+<body>
+    <h1>Smart Lights Dashboard</h1>
+    
+    <ul>
+        {% for light in smart_lights_data %}
+            <li>{{ light.name }} - Status: {{ light.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
